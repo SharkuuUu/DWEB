@@ -9,14 +9,13 @@ $counter = 0;
 
 <h1>Music Piece Prices</h1>
 
-<p>
+<div>
 <?php
 while ($counter < count($pieces)) {
-    echo $pieces[$counter] . " costs $ " . $prices[$counter];
-    echo "<br>";
+    echo "<p><strong>{$pieces[$counter]}</strong> costs \$" . number_format($prices[$counter], 2) . "</p>";
     $counter++;
 }
 ?>
-</p>
+</div>
 
 <?php include 'footer.php'; ?>
